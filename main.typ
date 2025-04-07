@@ -8,25 +8,25 @@
 )
 
 #title[
-  Sample Document
+  #lorem(3)
   ]
 
 #heading1[
-  = Fist Level Heading
+  = #lorem(5)
 ]
+
+#image-place("assets/2.JPG", dx: -32.5%, dy: 5%, width: 75%)
 
 #normal[
-  This is a normal Paragraph
+  #lorem(200)
 ]
 
-#quote[
-  This is a quote.
-]
+#pagebreak()
+// #quote[
+//   #lorem(50)
+// ]
 
-#lightblueCode[
-  #raw("
-  #lightblueCode is used to display Code.
-  And it support multiline like this.
-  Just remember to enclose a #raw
-  ", lang: "typst")
-]
+
+#image("assets/3.JPG")
+#image("assets/4.JPG")
+

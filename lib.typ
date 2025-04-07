@@ -16,7 +16,7 @@
         fill: rgb("#f0f0f0").lighten(20%),
         stroke: (thickness: 0.5pt, paint: rgb("#f0f0f0")),
       )
-    ]
+    ],
   )
 }
 
@@ -26,7 +26,7 @@
     center + horizon,
     dx: dx,
     dy: dy,
-    rectangle-strip(width, height, rotation: rotation)
+    rectangle-strip(width, height, rotation: rotation),
   )
 }
 
@@ -111,12 +111,13 @@
   block(body)
 }
 
-#let place(body, alignment: top + right, dx: 0pt, dy: 0pt) = {
+
+#let image-place(path, dx: 0pt, dy: 0pt, width: auto) = {
   place(
-    alignment,
+    center + horizon,
     dx: dx,
     dy: dy,
-    body,
+    [#box(image(path, width: width))]
   )
 }
 
@@ -129,3 +130,4 @@
 #let title = title
 #let lightblueCode = lightblueCode
 #let place = place
+#let image-place = image-place
