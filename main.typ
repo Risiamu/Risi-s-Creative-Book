@@ -2,14 +2,14 @@
 
 #show: doc => risi-create(
   title: "My Document",
-  authors: ("John Doe"),
+  authors: "John Doe",
   date: datetime.today(),
-  doc
+  doc,
 )
 
 #title[
   #lorem(3)
-  ]
+]
 
 #heading1[
   = #lorem(5)
@@ -20,6 +20,15 @@
 #normal[
   #lorem(200)
 ]
+
+#text-place(
+  normal[
+    #box(lorem(80))
+  ],
+  dx: -32.5%,
+  dy: 15%,
+  width: 45%
+)
 
 #pagebreak()
 // #quote[

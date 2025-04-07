@@ -121,6 +121,16 @@
   )
 }
 
+#let text-place(body, dx: 0pt, dy: 0pt, width: auto) = {
+  place(
+    center + horizon,
+    dx: dx,
+    dy: dy,
+    block(body,width: width)
+  )
+}
+
+
 
 // Make functions available to importing modules
 #let risi-create = risi-create
