@@ -15,7 +15,7 @@
   = #lorem(5)
 ]
 
-#image-place("assets/2.JPG", dx: -32.5%, dy: 5%, width: 75%)
+#image-place("assets/2.JPG", dx: -32.5%, dy: 5%, width: 85%)
 
 #normal[
   #lorem(200)
@@ -25,8 +25,8 @@
   normal[
     #box(lorem(80))
   ],
-  dx: -32.5%,
-  dy: 15%,
+  dx: 25%,
+  dy: 10%,
   width: 45%
 )
 

@@ -53,12 +53,12 @@
 #let normal(body) = {
   set par(
     justify: true,
-    first-line-indent: (amount: 0.75cm, all: true),
-    leading: 10pt,
-    spacing: 15pt,
+    first-line-indent: (amount: 0.35cm, all: true),
+    leading: 8pt,
+    spacing: 10pt,
   )
-  set block(above: 20pt, below: 20pt)
-  set text(font: body-font, 11pt, weight: "light")
+  set block(above: 20pt, below: 20pt, inset: (left: 5%, right: 5%))
+  set text(font: body-font, 10pt, weight: "light")
   block(body + parbreak())
 }
 
@@ -117,7 +117,7 @@
     center + horizon,
     dx: dx,
     dy: dy,
-    [#box(image(path, width: width))]
+    [#box(image(path, width: width))],
   )
 }
 
@@ -126,7 +126,7 @@
     center + horizon,
     dx: dx,
     dy: dy,
-    block(body,width: width)
+    block(body, width: width),
   )
 }
 
